@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roblox</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="content">
+            <img src="../resources/logo.png" alt="logo" class="logo">
+            <div class="form-window">
+                <h6>SIGN UP AND START HAVING FUN!</h6>
+                Birthday
+                <!-- <label for="birthday">Birthday</label> -->
+                <div class="birthday-group">
+                <select name="month" required>
+                    <option value="">Month</option>
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+
+                <select name="day" required>
+                    <option value="">Day</option>
+                    <!-- 1–31 -->
+                    <!-- ${[...Array(31).keys()].map(i => `<option value="${i + 1}">${i + 1}</option>`).join('')} -->
+                </select>
+
+                <select name="year" required>
+                    <option value="">Year</option>
+                    <!-- Generate years 2025–1900 -->
+                    <!-- ${[...Array(126).keys()].map(i => { -->
+                    <!-- const year = 2025 - i; -->
+                    <!-- return `<option value="${year}">${year}</option>`; -->
+                    <!-- }).join('')} -->
+                </select>
+                </div>
+                <form class="register-form">
+                Username
+                <input type="text" name="username" placeholder="Don't use your real name" required>
+                Email
+                <input type="email" name="email" placeholder="Email" required>
+                Password
+                <input type="password" name="password" placeholder="At least 8 characters" required>
+                <!-- <input type="password" placeholder="Confirm Password" required> -->
+                Gender
+                <!-- <label>Gender</label> -->
+                <div class="gender-buttons">
+                    <input type="radio" name="gender" value="female" id="female" hidden>
+                    <label for="female" class="gender-btn">♀</label>
+
+                    <input type="radio" name="gender" value="male" id="male" hidden>
+                    <label for="male" class="gender-btn">♂</label>
+                </div>
+                <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        ©2025 Roblox Corporation. Roblox, the Roblox logo 
+        and Powering Imagination are among our registered 
+        and unregistered trademarks in the U.S. and other 
+        countries.
+    </footer>
+</body>
+<script src="../scripts/register.js"></script>
+<!-- <scripts src="../scripts/script.js"></script> -->
+</html>
